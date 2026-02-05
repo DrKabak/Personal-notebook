@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kişisel Not Defteri</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Not Defterim</h1>
+
+<!-- Not Ekleme Formu -->
+
+<form id="noteForm">
+
+<input type="text" id="noteTitle" placeholder="Not Başlığı" required>
+
+<textarea id="noteContent" placeholder="Not İçeriği" required></textarea>
+
+<button type="submit">Notu Ekle</button>
+
+</form>
+
+<!-- Filtreleme ve Arama Bölümü -->
+
+<div class="filters">
+
+<input type="checkbox" id="showFavorites" /> Sadece Favoriler
+
+<input type="text" id="searchInput" placeholder="Ara...">
+
+</div>
+
+<!-- Not Listesi -->
+
+<div id="noteList"></div>
+
+</div>
+
+  
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
